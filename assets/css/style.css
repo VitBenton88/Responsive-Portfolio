@@ -176,7 +176,7 @@ input {
 	margin-top: 10px;
 	margin-bottom: 18px;
 	line-height: 2.5;
-	width: 500px;
+	width: 90%;
 }
 
 #Message textarea {
@@ -197,6 +197,7 @@ button {
 
 textarea {
 	margin-top: 10px;
+	padding: 0 34% 0 34%;
 
 	}
 
@@ -413,11 +414,16 @@ textarea {
 		color: #777777;
 		font-size: 18px;
 		line-height: 1.5;
-		}
+	}
 
 	section hr {
 		margin-bottom: 30px;
-		}
+	}
+	
+	textarea {
+		padding: 0 31% 0 31%;
+
+	}
 
 	aside {
 		width: 78.5%;
@@ -517,6 +523,11 @@ textarea {
 	section hr {
 		margin-bottom: 30px;
 		}
+
+	textarea {
+		padding: 0 29% 0 29%;
+
+	}
 
 	aside {
 		width: 78.5%;

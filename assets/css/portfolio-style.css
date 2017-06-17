@@ -31,7 +31,11 @@ header {
 	border-bottom: 2px solid #777777;
 	overflow: hidden;
 	background-color: white;
+}
 
+.headerWrap {
+	max-width: 960px;
+	margin: auto;
 }
 
 #name {
@@ -40,9 +44,14 @@ header {
 	color: white;
 	text-align: center;
 	padding: 0px;
-	width: 18%;
+	width: 280px;
 	float: left;
-	margin-left: 250px;
+	margin: 0 0 0 0;
+
+}
+
+#name h1 {
+	white-space: nowrap;
 
 }
 
@@ -50,7 +59,10 @@ nav {
 
 float: right;
 margin-top: 30px;
-margin-right: 230px;
+margin-right: 0px;
+margin-left: 100px;
+
+
 }
 
 nav a {
@@ -58,7 +70,11 @@ nav a {
 	color: #777777;
 	text-decoration: none;
 	font-size: 20px;
-	padding: 0px 20px 0 20px;
+	padding: 0px 15px 0 15px;
+}
+
+.noleftpadding {
+	padding-left: 0px;
 }
 
 .borderLink {
@@ -81,6 +97,18 @@ section {
 	margin-left: 15px;
 }
 
+#selfie {
+	width: 200px;
+	height: auto;
+	float: left;
+	margin-right: 25px;
+}
+
+section p {
+	color: #777777;
+	font-size: 18px;
+	line-height: 1.5;
+}
 
 section hr {
 margin-bottom: 30px;
@@ -113,9 +141,11 @@ footer {
 	background-color: #666666;
 	padding: 30px 0px 20px 0px;
 	border-top:  8px solid #4aaaa5;
+	position: static;
+    left: 0;
+    bottom: 0;
     height: 50px;
     width: 100%;
-    margin-top: 60px;
 }
 
 /* hover effects */
@@ -137,7 +167,6 @@ td:hover {
 	opacity: .5;
 	cursor: pointer;
 }
-
 
 /* Portfolio */
 
@@ -167,7 +196,7 @@ td {
 @media only screen and (max-width: 980px) {
 
 	body {
-		width: 980px;
+		width: 100%;
 	}
 
 	#name {
@@ -179,6 +208,7 @@ td {
 	width: 30%;
 	float: left;
 	margin-left: 25px;
+	min-width: 280px;
 
 	}
 
@@ -235,7 +265,7 @@ td {
 
 	section {
 		float: left;
-		width: 598px;
+		width: 50px;
 		padding: 5px 20px 10px 20px;
 		background-color: white;
 		border: 1px solid #4aaaa5;
@@ -299,7 +329,7 @@ td {
 
 	#resp-table {
 	display: initial;
-	margin: 0 0 0 80px;
+	margin: auto;
 	}
 
 	.over2 {
@@ -321,10 +351,12 @@ td {
 
 }
 
-@media only screen and (max-width: 768px) {
-		
-body {
-		width: 768px;
+	/* media queries */
+
+@media only screen and (max-width: 980px) {
+
+	body {
+		width: 100%;
 	}
 
 	#name {
@@ -333,9 +365,8 @@ body {
 	color: white;
 	text-align: center;
 	padding: 0px;
-	width: 35%;
 	float: left;
-	margin-left: 55px;
+	margin-left: 0px;
 
 	}
 
@@ -343,7 +374,146 @@ body {
 
 	float: right;
 	margin-top: 40px;
-	margin-right: 40px;
+	margin-right: 10px;
+	}
+
+	nav a {
+
+	color: #777777;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 0px 20px 0 20px;
+	}
+
+	header {
+
+	border-bottom: 2px solid #777777;
+	overflow: hidden;
+	background-color: white;
+
+	}
+
+	.headerWrap {
+	min-width: 0px;
+	max-width: 1400px;
+	margin: auto;
+	}
+
+	#wrap {
+
+		margin: 5px auto;
+		width: 100%;
+
+	}
+
+
+
+	#main h1 {
+
+		font-family: 'Georgia', Times, "Times New Roman", serif;
+		color: #4aaaa5;
+	}
+
+	aside h3 {
+
+		font-family: 'Georgia', Times, "Times New Roman", serif;
+		color: #4aaaa5;
+	}
+
+	.borderLink {
+
+		border-right: 1px solid #777777;
+	}
+
+	#main {
+		overflow: hidden;
+		padding-bottom: 40px;
+	}
+
+	section {
+		float: left;
+		width: 430px;
+		padding: 5px 20px 10px 20px;
+		background-color: white;
+		border: 1px solid #4aaaa5;
+		margin-top: 40px;
+		margin-left: 0px;
+	}
+
+	#selfie {
+		width: 200px;
+		height: auto;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+
+	section p {
+		color: #777777;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+	section hr {
+	margin-bottom: 30px;
+
+	}
+
+	aside {
+		text-align: center;
+		float: right;
+		background-color: white;
+		border: 1px solid #4aaaa5;
+		width: 208px;
+		padding: 10px 25px 30px 25px;
+		margin-top: 40px;
+		margin-right: 100px;
+		
+	}
+
+	aside img {
+		width: 60px;
+		height: auto;
+		opacity: 1;
+		margin-top: 15px;
+	}
+
+	footer {
+		text-align: center;
+		color: white;
+		font-size: 14px;
+		background-color: #666666;
+		padding: 20px 0px 20px 0px;
+		border-top:  8px solid #4aaaa5;
+		position: static;
+	    width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	body {
+		width: 100%;
+	}
+
+	#name {
+
+	background-color: #4aaaa5;
+	color: white;
+	text-align: center;
+	padding: 0px;
+	float: left;
+	margin-left: 0px;
+
+	}
+
+	nav {
+
+	float: right;
+	margin-top: 40px;
+	margin-right: 0px;
+	margin-left: 0px;
 	}
 
 	nav a {
@@ -363,7 +533,6 @@ body {
 	}
 
 	.borderLink {
-
 	border-right: 1px solid #777777;
 	}
 
@@ -378,7 +547,7 @@ body {
 	}
 
 	section {
-		width: 80%;
+		width: 60%;
 		float: none;
 		margin: 20px auto;
 	}
@@ -395,11 +564,16 @@ body {
 		color: #777777;
 		font-size: 18px;
 		line-height: 1.5;
-		}
+	}
 
 	section hr {
 		margin-bottom: 30px;
-		}
+	}
+	
+	textarea {
+		padding: 0 31% 0 31%;
+
+	}
 
 	aside {
 		width: 78.5%;
@@ -407,19 +581,6 @@ body {
 		margin: 20px auto;
 		text-align: left;
 
-	}
-
-	#normal-table {
-	display: initial;
-	}
-
-	#resp-table {
-	display: initial;
-	}
-
-	td img {
-		width: 250px;
-		height: auto;
 	}
 
 	footer {
@@ -433,13 +594,13 @@ body {
     height: 50px;
     width: 100%;
 	}
-}	
+}
 
 @media only screen and (max-width: 640px) {
 
 
 	body {
-		width: 640px;
+		width: 100%;
 	}
 
 	header {
@@ -460,13 +621,13 @@ body {
 	color: #777777;
 	text-decoration: none;
 	font-size: 20px;
-	padding: 0px 60px 0 60px;
+	padding: 0px 25px 0 25px;
 	}
 
 	.borderLink {
 
 	border-right: 0px solid #777777;
-	}
+}
 
 	#name {
 
@@ -490,7 +651,8 @@ body {
 	}
 
 	section {
-		width: 80%;
+		width: 60%;
+		min-width: 340px;
 		float: none;
 		margin: 20px auto;
 	}
@@ -513,29 +675,14 @@ body {
 		margin-bottom: 30px;
 		}
 
-	#normal-table {
-		display: none;
+	textarea {
+		padding: 0 29% 0 29%;
+
 	}
 
-	#resp-table {
-	display: initial;
-	margin: 0 0 0 -16px;
-	}
-
-	.over2 {
-	background-color: #4aaaa5;
-	color: white;
-	text-align: center;
-	position: relative;
-	top: -80px;
-	margin-bottom: -65px;
-	width: 100%;
-	padding: 10px 0px 10px 0px;
-	}
-
-		td img {
-		width: 500px;
-		height: auto;
+	td img {
+	width: 300px;
+	height: auto;
 	}
 
 	aside {
